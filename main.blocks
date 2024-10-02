@@ -1,0 +1,73 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="device_button_event" id="k+.ruCyy.3{m[glna*J!" x="192" y="-219"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_print_message" id="c.z5nf0cbP2$4Hcz~t,v"><value name="text"><shadow type="text" id="yEJ$IA@P86!l#uig_$Y$"><field name="TEXT">A</field></shadow></value><next><block type="radio_datagram_send" id="IY/Uji|iqB}yHOKao8fr"><value name="value"><shadow type="math_number" id="`^?2=g8V*loZdCxvrugy"><field name="NUM">11</field></shadow></value></block></next></block></statement></block><block type="device_button_event" id="jdAdgxw;b(r5Fonf(@Z3" x="462" y="-224"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_print_message" id="!)cpT;/*_~|YI_=b_G8z"><value name="text"><shadow type="text" id="^NMW5NHtREF]PIv^|-v:"><field name="TEXT">B</field></shadow></value><next><block type="radio_datagram_send" id="Z(JCWYq0PX$yRj*Ua#BY"><value name="value"><shadow type="math_number" id=":.ZaUvrmr0`H/HX%yP8."><field name="NUM">22</field></shadow></value></block></next></block></statement></block><block type="pxt-on-start" id="fG)6[o6|b3KS%5`.nJ:W" x="-372" y="-166"><statement name="HANDLER"><block type="radio_set_group" id="/g-%+zrtmttt|~b:rAdd"><value name="ID"><shadow type="math_number_minmax" id="6/[8xqz)(@ezwc;q-;ll"><mutation min="0" max="255" label="Id" precision="0"></mutation><field name="SLIDER">77</field></shadow></value><next><block type="gamePad_vibratorMotor" id="Fr3T`6y{?bqfo~#42O}~"><field name="index">gamePad.Vibrator.V0</field><next><block type="gamePad_vibratorMotorSpeed" id="PAvWkGSXFqB^lWdpLa$^"><value name="degree"><shadow type="math_number_minmax" id="_GV,PIr%v_%^=:;uN5E~"><mutation min="0" max="255" label="Degree" precision="0"></mutation><field name="SLIDER">22</field></shadow></value><next><block type="gamePad_vibratorMotor" id="[U%Ri.U/;!HDN7xh;{H."><field name="index">gamePad.Vibrator.V1</field><next><block type="gamePad_led" id=")[.=8U}FHnui!N+zc7}B"><field name="index">gamePad.Led.ON</field><next><block type="device_pause" id="RfOp@*=;ht~mpu|m(`Y`"><value name="pause"><shadow type="timePicker" id="7]FlX:,og$Q$FGB5)8uN"><field name="ms">500</field></shadow></value><next><block type="gamePad_vibratorMotor" id="Uj6mJmcP%lUjbXnfMRP`"><field name="index">gamePad.Vibrator.V0</field><next><block type="gamePad_led" id="5l:6u(=X~PdC:=Q.nhd="><field name="index">gamePad.Led.OFF</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="oR);f)JNLvm/_,%GX@)5" x="721" y="-222"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="basic_show_icon" id="d$trMB1zn(a2Hts2QcgT"><field name="i">IconNames.Heart</field><next><block type="radio_datagram_send" id="9x`v37aTrIv/;CnUW/{E"><value name="value"><shadow type="math_number" id="s/6yqc~k~59ic][Ahbg;"><field name="NUM">33</field></shadow></value></block></next></block></statement></block><block type="device_forever" id="5D3PLE8S.P04N-VC~kuZ" x="0" y="0"></block><block type="gamePad_onEvent" id="bY3zGj{o3:7Zsk6ZO]Uz" x="856" y="104"><field name="button">GamerBitPin.P15</field><field name="event">GamerBitEvent.Down</field><statement name="HANDLER"><block type="device_show_leds" id="?ux/tXdGd2=AO9[kchs_"><field name="LEDS">`
+        . . # . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="]ygv3se*`iy86a7Q8w/s"><value name="value"><shadow type="math_number" id="jMZ)=i(9+yOq!WNApLX#"><field name="NUM">4</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="|TmC%V,3DPQ5GF@YS1yO" x="-375" y="346"><field name="button">GamerBitPin.P1</field><field name="event">GamerBitEvent.Down</field><statement name="HANDLER"><block type="device_show_leds" id="c,Ea|pwd*mT3P#.OLH.a"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . # # # 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="2QP7beb,nyHo]5VV5Y}u"><value name="value"><shadow type="math_number" id="vE?DQ/*5Yj{i7xXi=*A^"><field name="NUM">2</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="AUi8lj$LEa*.k7kZ0z.I" x="-56" y="351"><field name="button">GamerBitPin.P2</field><field name="event">GamerBitEvent.Down</field><statement name="HANDLER"><block type="device_show_leds" id="b[#)HWttbwzuu08VIoqx"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="kT%4!^[JQRoexo.S$9v1"><value name="value"><shadow type="math_number" id="EN=UT#Qj?mnUzm*X4qn0"><field name="NUM">3</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="s5j10O~Vi,[3nsxeJ2e5" x="541" y="335"><field name="button">GamerBitPin.P8</field><field name="event">GamerBitEvent.Down</field><statement name="HANDLER"><block type="device_show_leds" id="3+~Y{P*OS5}0IP.YvjKz"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="I:{%(NPGXL4)`yH%ew2@"><value name="value"><shadow type="math_number" id="[x.EfKMk,.__oA6`Q+#g"><field name="NUM">7</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="XeM^5GOVdtuF:_`e4T3)" x="1257" y="391"><field name="button">GamerBitPin.P14</field><field name="event">GamerBitEvent.Down</field><statement name="HANDLER"><block type="device_show_leds" id="7dA++JZUHcns=WhSK#_3"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . # 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="Q6yNMgsSmOd}T(2s?E3m"><value name="value"><shadow type="math_number" id="hD]uNyhv?QhU9tXs+,9]"><field name="NUM">5</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="y(4_K~Ex9TJb0V?C{d*p" x="856" y="475"><field name="button">GamerBitPin.P13</field><field name="event">GamerBitEvent.Down</field><statement name="HANDLER"><block type="device_show_leds" id="p]XOzKwmnm@DcoSTPM?h"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . # . .
+        `</field><next><block type="radio_datagram_send" id="^DDB7+JW7b)7Xn2%fs6H"><value name="value"><shadow type="math_number" id=":Se~GSiAE2=/|2wJrCte"><field name="NUM">6</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="D.$A5n4)sGuU9HltihY0" x="-381" y="716"><field name="button">GamerBitPin.P1</field><field name="event">GamerBitEvent.Up</field><statement name="HANDLER"><block type="device_show_leds" id="5NH/I]*O#NZLYqvZ-CrF"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="G2[,Sq{qbp*ORadzZPE-"><value name="value"><shadow type="math_number" id="ySP{HR=;NUoPcaeWP))m"><field name="NUM">12</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="4tiJv0c,79}INs/g:=YY" x="-61" y="724"><field name="button">GamerBitPin.P2</field><field name="event">GamerBitEvent.Up</field><statement name="HANDLER"><block type="device_show_leds" id="^r7@Guuc8{NR[)JQV_j+"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="N$3lrmVQ`J+}-$:LQH(["><value name="value"><shadow type="math_number" id="{:_}K,+18-vWY;,MBIfq"><field name="NUM">13</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="vP**`6wwG_8:0D4-i7AS" x="684" y="969"><field name="button">GamerBitPin.P15</field><field name="event">GamerBitEvent.Up</field><statement name="HANDLER"><block type="device_show_leds" id="KV,twbq~yxHl!#Fs}gr}"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="yvIe6eh}HIyn|C3IHAQ;"><value name="value"><shadow type="math_number" id="xGy=($a.R-7OF#wmgpg!"><field name="NUM">14</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="i{sb5{%7G8C(A)!c2?KQ" x="336" y="1123"><field name="button">GamerBitPin.P8</field><field name="event">GamerBitEvent.Up</field><statement name="HANDLER"><block type="device_show_leds" id="(Utzt=py`Pt(X9QSxdHm"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="$LBPVt~Hxji[ZFzm`aLJ"><value name="value"><shadow type="math_number" id=";2)|}kFsbzKReRevl]i+"><field name="NUM">17</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="EjpPC%XqM.rlbaL4D3aS" x="1086" y="1230"><field name="button">GamerBitPin.P14</field><field name="event">GamerBitEvent.Up</field><statement name="HANDLER"><block type="device_show_leds" id="u$OXRPo!JwF|Ig!X}.xt"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="$L.nwIm:2%V4[kDUJf)Z"><value name="value"><shadow type="math_number" id="F#C9FJ3=Ck.A$}42Na+6"><field name="NUM">15</field></shadow></value></block></next></block></statement></block><block type="gamePad_onEvent" id="CgslR=0OhDUOy_O[p^_Z" x="677" y="1411"><field name="button">GamerBitPin.P13</field><field name="event">GamerBitEvent.Up</field><statement name="HANDLER"><block type="device_show_leds" id="D_13Vp}DgHY_yo/vl[Sg"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="radio_datagram_send" id="YF,/?175Hn1PN;yQtjE8"><value name="value"><shadow type="math_number" id="Hr4P9?#W_6?b@dzJ7F7@"><field name="NUM">16</field></shadow></value></block></next></block></statement></block></xml>
