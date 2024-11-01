@@ -1,8 +1,8 @@
 gamePad.onEvent(GamerBitPin.P15, GamerBitEvent.Up, function () {
     basic.showLeds(`
+        . . # . .
         . . . . .
         . . . . .
-        . . . . #
         . . . . .
         . . . . .
         `)
@@ -12,7 +12,7 @@ gamePad.onEvent(GamerBitPin.P14, GamerBitEvent.Up, function () {
     basic.showLeds(`
         . . . . .
         . . . . .
-        # . . . .
+        . . . . #
         . . . . .
         . . . . .
         `)
@@ -22,7 +22,7 @@ gamePad.onEvent(GamerBitPin.P14, GamerBitEvent.Down, function () {
     basic.showLeds(`
         . . . . .
         . . . . .
-        # # # . .
+        . . # # #
         . . . . .
         . . . . .
         `)
@@ -34,19 +34,19 @@ input.onButtonPressed(Button.A, function () {
 })
 gamePad.onEvent(GamerBitPin.P2, GamerBitEvent.Up, function () {
     basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
         . . # . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
         `)
     radio.sendNumber(7)
 })
 gamePad.onEvent(GamerBitPin.P15, GamerBitEvent.Down, function () {
     basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . # # #
+        . . # . .
+        . . # . .
+        . . # . .
         . . . . .
         . . . . .
         `)
@@ -65,7 +65,7 @@ gamePad.onEvent(GamerBitPin.P13, GamerBitEvent.Down, function () {
 gamePad.onEvent(GamerBitPin.P8, GamerBitEvent.Up, function () {
     basic.showLeds(`
         . . . . .
-        . . # . .
+        . . . . .
         . . # . .
         . . . . .
         . . . . .
@@ -76,7 +76,7 @@ gamePad.onEvent(GamerBitPin.P1, GamerBitEvent.Up, function () {
     basic.showLeds(`
         . . . . .
         . . . . .
-        . . . . #
+        # . . . .
         . . . . .
         . . . . .
         `)
@@ -85,9 +85,9 @@ gamePad.onEvent(GamerBitPin.P1, GamerBitEvent.Up, function () {
 gamePad.onEvent(GamerBitPin.P8, GamerBitEvent.Down, function () {
     basic.showLeds(`
         . . . . .
-        . . # . .
-        . . # . .
-        . . . . .
+        . # # # .
+        . # . # .
+        . # # # .
         . . . . .
         `)
     radio.sendNumber(14)
@@ -96,14 +96,14 @@ gamePad.onEvent(GamerBitPin.P1, GamerBitEvent.Down, function () {
     basic.showLeds(`
         . . . . .
         . . . . .
-        . . # # #
+        # # # . .
         . . . . .
         . . . . .
         `)
     radio.sendNumber(4)
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.Pitchfork)
     radio.sendNumber(3)
 })
 input.onButtonPressed(Button.B, function () {
@@ -116,17 +116,17 @@ gamePad.onEvent(GamerBitPin.P13, GamerBitEvent.Up, function () {
         . . . . .
         . . . . .
         . . . . .
-        . . . . .
+        . . # . .
         `)
     radio.sendNumber(9)
 })
 gamePad.onEvent(GamerBitPin.P2, GamerBitEvent.Down, function () {
     basic.showLeds(`
-        . . # . .
-        . . # . .
-        . . # . .
         . . . . .
         . . . . .
+        . . # . .
+        . . # . .
+        . . # . .
         `)
     radio.sendNumber(6)
 })
