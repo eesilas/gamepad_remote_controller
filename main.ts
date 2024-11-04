@@ -34,11 +34,11 @@ input.onButtonPressed(Button.A, function () {
 })
 gamePad.onEvent(GamerBitPin.P2, GamerBitEvent.Up, function () {
     basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
         . . # . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
         `)
     radio.sendNumber(7)
 })
